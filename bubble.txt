@@ -1,0 +1,23 @@
+#init i
+#init j
+
+
+
+
+
+
+algo:
+
+
+
+
+int temp;
+for (#i =0;#i <Data.ARRAY.length-1;#i ++){
+	for (#j =0;#j <Data.ARRAY.length-1;#j ++){
+		if (Data.ARRAY[#j ] > Data.ARRAY[#j +1]){
+		temp=Data.ARRAY[#j ];
+		Data.ARRAY[#j ]=Data.ARRAY[#j +1];
+		Data.ARRAY[#j +1]=temp;
+		}
+	}
+}

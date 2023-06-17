@@ -1,0 +1,30 @@
+//implement stack 
+
+#init tos -1
+#init UB
+#init LB
+algo:
+
+#UB =Data.ARRAY.length;
+#LB =-1;
+@//first reset all value 
+@for (int i=0;i<Data.ARRAY.length;i++){
+@	Data.ARRAY[i]=0;
+@}
+
+
+
+for (int i=0;i<10;i++){
+	Data.ARRAY[++#tos ]=i;
+	if (#tos >#UB ){
+	System.out.println ("Stack is full");
+}
+}
+
+
+for (int i=0;i<13;i++){
+	#tos =#tos -1;
+	if (#tos <=#LB ){
+	System.out.println ("Stack is empty");
+}
+}
